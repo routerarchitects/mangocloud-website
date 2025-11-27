@@ -1,43 +1,34 @@
 ---
+id: architecture-system-architecture
+slug: /architecture/system-architecture
+title: System Architecture
 sidebar_position: 1
 ---
 
-# Create a Page
+# System Architecture
 
-Add **Markdown or React** files to `src/pages` to create a **standalone page**:
+MangoCloud is a distributed controller composed of stateless control planes, persistent data services, and device adapters. This overview highlights how each component collaborates to manage OpenWiFi hardware.
 
-- `src/pages/index.js` → `localhost:3000/`
-- `src/pages/foo.md` → `localhost:3000/foo`
-- `src/pages/foo/bar.js` → `localhost:3000/foo/bar`
+## Control Plane
 
-## Create your first React Page
+- **API Gateway:** Terminates TLS, authenticates tenants, and enforces rate limiting.
+- **Workflow Engine:** Orchestrates onboarding, configuration, and firmware rollouts using event-driven pipelines.
+- **Policy Compiler:** Converts tenant intent into device-specific configuration bundles.
 
-Create a file at `src/pages/my-react-page.js`:
+## Data Services
 
-```jsx title="src/pages/my-react-page.js"
-import React from 'react';
-import Layout from '@theme/Layout';
+- **PostgreSQL/etcd:** Stores tenant metadata, device inventory, and policy history.
+- **Message Bus (Kafka/NATS):** Streams telemetry and operational events between services.
+- **Object Storage:** Retains firmware artifacts, diagnostic bundles, and backup exports.
 
-export default function MyReactPage() {
-  return (
-    <Layout>
-      <h1>My React page</h1>
-      <p>This is a React page</p>
-    </Layout>
-  );
-}
-```
+## Device Adapters
 
-A new page is now available at [http://localhost:3000/my-react-page](http://localhost:3000/my-react-page).
+- **Access Points:** Handles provisioning, heartbeat, and channel/power adjustments.
+- **Switches:** Applies VLAN, QoS, and PoE policies with per-port observability.
+- **OLGs:** Maintains tunnel termination, WAN assurance metrics, and routing policies.
 
-## Create your first Markdown Page
+## Deployment Guidance
 
-Create a file at `src/pages/my-markdown-page.md`:
-
-```mdx title="src/pages/my-markdown-page.md"
-# My Markdown page
-
-This is a Markdown page
-```
-
-A new page is now available at [http://localhost:3000/my-markdown-page](http://localhost:3000/my-markdown-page).
+- Deploy services as containers with horizontal pod autoscaling.
+- Use separate namespaces for staging and production clusters.
+- Enable zero-downtime upgrades via rolling deployments and health probes.

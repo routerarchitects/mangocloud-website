@@ -1,31 +1,31 @@
 ---
-sidebar_position: 5
+id: deployment-kubernetes
+slug: /deployment/kubernetes
+title: Deploy on Kubernetes
+sidebar_position: 1
 ---
 
-# Deploy your site
+# Deploy on Kubernetes
 
-Docusaurus is a **static-site-generator** (also called **[Jamstack](https://jamstack.org/)**).
+Kubernetes is the recommended environment for MangoCloud because it enables horizontal scaling and rapid upgrades.
 
-It builds your site as simple **static HTML, JavaScript and CSS files**.
+## Cluster Requirements
 
-## Build your site
+- Kubernetes 1.27+
+- Persistent storage class for PostgreSQL/etcd
+- Load balancer or ingress controller with TLS termination
+- External message bus (Kafka/NATS) or managed equivalent
 
-Build your site **for production**:
+## Installation Steps
 
-```bash
-npm run build
-```
+1. **Clone the repository:** `git clone https://github.com/RouterArchitects/mangocloud-website`
+2. **Namespace prep:** `kubectl create namespace mangocloud`
+3. **Secrets:** Apply manifests for database credentials, API keys, and TLS certificates.
+4. **Deploy controllers:** `kubectl apply -n mangocloud -f deploy/kubernetes/`
+5. **Verify health:** Use `kubectl get pods` and `kubectl logs` to ensure all services are running.
 
-The static files are generated in the `build` folder.
+## Post-Deployment
 
-## Deploy your site
-
-Test your production build locally:
-
-```bash
-npm run serve
-```
-
-The `build` folder is now served at [http://localhost:3000/](http://localhost:3000/).
-
-You can now deploy the `build` folder **almost anywhere** easily, **for free** or very small cost (read the **[Deployment Guide](https://docusaurus.io/docs/deployment)**).
+- Configure ingress hostnames (e.g., `api.mangowifi.cloud`).
+- Enable autoscaling for stateless services.
+- Set up backup jobs for PostgreSQL and configuration snapshots.

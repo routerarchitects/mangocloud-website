@@ -1,34 +1,39 @@
 ---
-sidebar_position: 3
+id: architecture-services-overview
+slug: /architecture/services-overview
+title: Services Overview
+sidebar_position: 2
 ---
 
-# Create a Blog Post
+# Services Overview
 
-Docusaurus creates a **page for each blog post**, but also a **blog index page**, a **tag system**, an **RSS** feed...
+Each MangoCloud service has a single responsibility to simplify scaling and upgrades.
 
-## Create your first Post
+## API Gateway
 
-Create a file at `blog/2021-02-28-greetings.md`:
+- Terminates TLS for UI, CLI, and automation clients
+- Performs JWT validation and tenant routing
+- Exposes REST and gRPC interfaces documented via OpenAPI
 
-```md title="blog/2021-02-28-greetings.md"
----
-slug: greetings
-title: Greetings!
-authors:
-  - name: Joel Marcey
-    title: Co-creator of Docusaurus 1
-    url: https://github.com/JoelMarcey
-    image_url: https://github.com/JoelMarcey.png
-  - name: Sébastien Lorber
-    title: Docusaurus maintainer
-    url: https://sebastienlorber.com
-    image_url: https://github.com/slorber.png
-tags: [greetings]
----
+## Device Control Service
 
-Congratulations, you have made your first post!
+- Maintains state machines for onboarding and lifecycle events
+- Pushes firmware, telemetry sampling rules, and policy bundles
+- Provides hooks for external automation (webhooks, message bus)
 
-Feel free to play around and edit this post as much as you like.
-```
+## Configuration Service
 
-A new blog post is now available at [http://localhost:3000/blog/greetings](http://localhost:3000/blog/greetings).
+- Stores reusable configuration profiles
+- Validates templates before rollout
+- Supports GitOps-driven pull requests with automatic drift detection
+
+## Telemetry Service
+
+- Ingests metrics, logs, and events from APs, switches, and OLGs
+- Normalizes datapoints into a unified schema
+- Publishes alerts to the API Gateway and message bus
+
+## Supporting Services
+
+- **Identity:** Handles SSO integration and RBAC policy evaluation.
+- **Scheduler:** Coordinates asynchronous jobs such as backups, cleanup, and analytics exports.

@@ -1,57 +1,37 @@
 ---
+id: intro-getting-started
+slug: /intro/getting-started
+title: Getting Started
 sidebar_position: 2
 ---
 
-# Create a Document
+# Getting Started
 
-Documents are **groups of pages** connected through:
+Use this guide to install MangoCloud locally or in a production cluster.
 
-- a **sidebar**
-- **previous/next navigation**
-- **versioning**
+## Prerequisites
 
-## Create your first Doc
+- Node.js 20+ for UI builds
+- Container runtime (Docker or containerd)
+- Kubernetes cluster (recommended) or Docker Compose environment
+- Access to OpenWiFi devices (AP, Switch, or OLG) for validation
 
-Create a Markdown file at `docs/hello.md`:
+## Installation Options
 
-```md title="docs/hello.md"
-# Hello
+### Kubernetes
 
-This is my **first Docusaurus document**!
-```
+1. Clone the MangoCloud repository.
+2. Apply the base manifests from `deploy/kubernetes`.
+3. Configure secrets for database, message bus, and API keys.
+4. Expose the controller through an ingress with TLS.
 
-A new document is now available at [http://localhost:3000/docs/hello](http://localhost:3000/docs/hello).
+### Docker Compose
 
-## Configure the Sidebar
+1. Copy `deploy/docker-compose.yml`.
+2. Set environment variables for controller services.
+3. Run `docker compose up -d` and monitor the logs until services are healthy.
 
-Docusaurus automatically **creates a sidebar** from the `docs` folder.
+## Next Steps
 
-Add metadata to customize the sidebar label and position:
-
-```md title="docs/hello.md" {1-4}
----
-sidebar_label: 'Hi!'
-sidebar_position: 3
----
-
-# Hello
-
-This is my **first Docusaurus document**!
-```
-
-It is also possible to create your sidebar explicitly in `sidebars.js`:
-
-```js title="sidebars.js"
-export default {
-  tutorialSidebar: [
-    'intro',
-    // highlight-next-line
-    'hello',
-    {
-      type: 'category',
-      label: 'Tutorial',
-      items: ['tutorial-basics/create-a-document'],
-    },
-  ],
-};
-```
+- Review [System Architecture](/docs/architecture/system-architecture) for component responsibilities.
+- Prepare [Configuration Profiles](/docs/configuration/config-profiles) before onboarding devices.

@@ -1,55 +1,29 @@
 ---
+id: configuration-config-profiles
+slug: /configuration/config-profiles
+title: Configuration Profiles
 sidebar_position: 1
 ---
 
-# Manage Docs Versions
+# Configuration Profiles
 
-Docusaurus can manage multiple versions of your docs.
+Configuration profiles allow operators to define reusable policies and apply them to device groups.
 
-## Create a docs version
+## Profile Types
 
-Release a version 1.0 of your project:
+- **Wireless:** SSIDs, security, channel plans, and QoS.
+- **Wired:** VLANs, trunk/edge templates, PoE budgets.
+- **Gateway:** WAN links, tunnels, firewall rules.
 
-```bash
-npm run docusaurus docs:version 1.0
-```
+## Lifecycle
 
-The `docs` folder is copied into `versioned_docs/version-1.0` and `versions.json` is created.
+1. **Create:** Build profiles in the UI or via the Configuration API.
+2. **Validate:** Run static validation and, optionally, device simulators.
+3. **Publish:** Version the profile and associate it with tenants or sites.
+4. **Roll Out:** Target device groups and monitor status.
 
-Your docs now have 2 versions:
+## Best Practices
 
-- `1.0` at `http://localhost:3000/docs/` for the version 1.0 docs
-- `current` at `http://localhost:3000/docs/next/` for the **upcoming, unreleased docs**
-
-## Add a Version Dropdown
-
-To navigate seamlessly across versions, add a version dropdown.
-
-Modify the `docusaurus.config.js` file:
-
-```js title="docusaurus.config.js"
-export default {
-  themeConfig: {
-    navbar: {
-      items: [
-        // highlight-start
-        {
-          type: 'docsVersionDropdown',
-        },
-        // highlight-end
-      ],
-    },
-  },
-};
-```
-
-The docs version dropdown appears in your navbar:
-
-![Docs Version Dropdown](./img/docsVersionDropdown.png)
-
-## Update an existing version
-
-It is possible to edit versioned docs in their respective folder:
-
-- `versioned_docs/version-1.0/hello.md` updates `http://localhost:3000/docs/hello`
-- `docs/hello.md` updates `http://localhost:3000/docs/next/hello`
+- Store profile definitions in Git and sync via API.
+- Use variables for tenant-specific overrides.
+- Schedule maintenance windows for large rollouts.

@@ -1,23 +1,28 @@
 ---
-sidebar_position: 6
+id: onboarding-add-openwifi-aps
+slug: /onboarding/add-openwifi-aps
+title: Add OpenWiFi APs
+sidebar_position: 1
 ---
 
-# Congratulations!
+# Add OpenWiFi APs
 
-You have just learned the **basics of Docusaurus** and made some changes to the **initial template**.
+Follow this process to onboard Access Points into MangoCloud.
 
-Docusaurus has **much more to offer**!
+## Prepare the Device
 
-Have **5 more minutes**? Take a look at **[versioning](../tutorial-extras/manage-docs-versions.md)** and **[i18n](../tutorial-extras/translate-your-site.md)**.
+1. Flash the latest OpenWiFi firmware.
+2. Set the redirector to the MangoCloud controller URL.
+3. Collect the device serial number, firmware version, and site details.
 
-Anything **unclear** or **buggy** in this tutorial? [Please report it!](https://github.com/facebook/docusaurus/discussions/4610)
+## Onboarding Steps
 
-## What's next?
+1. Navigate to **Devices → Add Device** in the UI or use the onboarding API.
+2. Provide device identifiers and assign a site plus tenant.
+3. Wait for the device to connect; MangoCloud will push default policies and firmware checks.
 
-- Read the [official documentation](https://docusaurus.io/)
-- Modify your site configuration with [`docusaurus.config.js`](https://docusaurus.io/docs/api/docusaurus-config)
-- Add navbar and footer items with [`themeConfig`](https://docusaurus.io/docs/api/themes/configuration)
-- Add a custom [Design and Layout](https://docusaurus.io/docs/styling-layout)
-- Add a [search bar](https://docusaurus.io/docs/search)
-- Find inspirations in the [Docusaurus showcase](https://docusaurus.io/showcase)
-- Get involved in the [Docusaurus Community](https://docusaurus.io/community/support)
+## Verification
+
+- Confirm heartbeats under **Telemetry → Live Feed**.
+- Review applied configuration in the device detail drawer.
+- Schedule firmware compliance checks for the new fleet.

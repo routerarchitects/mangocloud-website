@@ -1,0 +1,28 @@
+---
+title: MangoCloud Security
+description: Learn how MangoCloud handles security and how to report vulnerabilities.
+---
+
+# Security
+
+Security is foundational for a multi-tenant OpenWiFi controller. MangoCloud follows secure SDLC practices, infrastructure hardening, and responsible disclosure.
+
+## Principles
+
+- Defense-in-depth across control planes, data planes, and APIs
+- Least privilege RBAC aligned to tenants and operators
+- Continuous dependency scanning and image signing
+
+## Reporting Vulnerabilities
+
+1. Email `security@routerarchitects.com` with an encrypted report (PGP key published in the repository).
+2. Include reproduction steps, impact, and any mitigation ideas.
+3. Expect an acknowledgement within 48 hours and triage timeline within five business days.
+
+Please do not open public GitHub issues for security findings.
+
+## Hardening Guidance
+
+- Run controller components on dedicated clusters with network segmentation.
+- Use provided manifests to enable TLS everywhere and enforce strong cipher suites.
+- Rotate API keys and tenant secrets regularly; automation examples are included in `/docs/configuration/config-profiles`.

@@ -1,0 +1,23 @@
+---
+title: MangoCloud Architecture
+description: High-level overview of MangoCloud components and control planes.
+---
+
+# Architecture Overview
+
+MangoCloud is composed of modular services that communicate over event-driven APIs. Each region hosts stateless control planes backed by persistent data services.
+
+## Core Layers
+
+1. **Ingress & API Gateway** — Terminates TLS, authenticates tenants, and routes REST/gRPC requests.
+2. **Control Plane** — Scheduler, workflow engine, and policy compiler responsible for orchestrating device behavior.
+3. **Data Plane** — Telemetry ingestion, time-series storage, and analytics exporters.
+4. **Device Adapters** — OpenWiFi-specific adapters managing AP, Switch, and OLG lifecycles.
+
+## Platform Characteristics
+
+- Multi-region ready with etcd/PostgreSQL HA primitives
+- Stateless microservices with horizontal scaling
+- Event streaming between onboarding, configuration, and telemetry services
+
+Refer to `/docs/architecture/system-architecture` for deployment diagrams and `/docs/architecture/services-overview` for component responsibilities.

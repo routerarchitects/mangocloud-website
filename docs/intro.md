@@ -1,47 +1,27 @@
 ---
+id: intro-overview
+slug: /intro/overview
+title: Overview
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# MangoCloud Overview
 
-Let's discover **Docusaurus in less than 5 minutes**.
+MangoCloud is an open-source, production-ready controller for OpenWiFi Access Points, Switches, and OpenLAN Gateways (OLGs). Maintained by Router Architects, the project provides multi-tenant automation, telemetry, and APIs aligned with service-provider requirements.
 
-## Getting Started
+## Why MangoCloud
 
-Get started by **creating a new site**.
+- **Open-source governance:** Transparent roadmap, CLA-backed contributions, and permissive licensing.
+- **Production hardened:** Multi-tenant controls, compliance-aligned operations, and high availability tooling.
+- **Hardware coverage:** First-class support for the entire OpenWiFi ecosystem with consistent telemetry and policy models.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+## Architecture Pillars
 
-### What you'll need
+1. **Cloud-native design** — Stateless microservices, container packaging, and GitOps-friendly manifests.
+2. **Security first** — Role-based access, encrypted control channels, and auditable workflows.
+3. **API-first integrations** — REST, gRPC, and event streaming to connect OSS/BSS platforms.
 
-- [Node.js](https://nodejs.org/en/download/) version 20.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+## Continue Learning
 
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+- Follow the [Getting Started guide](/docs/intro/getting-started) to deploy MangoCloud.
+- Review the [Architecture documentation](/docs/architecture/system-architecture) to understand service boundaries.
