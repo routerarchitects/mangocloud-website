@@ -63,3 +63,35 @@ a[href='https://www.routerarchitects.com'] {
   border-color: #1f6d3d !important;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
+
+.community-members {
+  margin: 2.5rem 0;
+}
+
+.community-members h2 {
+  margin-bottom: 1rem;
+}
+
+.members-grid {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, max-content);
+  gap: 1rem;
+  align-items: center;
+  justify-items: start;
+}
+
+.member-card {
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  display: block;
+  text-decoration: none;
+  width: min(360px, 100%);
+}
+
+.member-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
