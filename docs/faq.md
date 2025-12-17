@@ -61,7 +61,7 @@ Not usually. In most manufacturing setups, the ODM generates and programs MAC ad
 
 ## What is the minimum RAM and flash required to run an OpenWiFi image?
 
-At a minimum, an OpenWiFi access point requires 256 MB of RAM and 16 MB of flash, though 512 MB RAM and 32 MB flash is strongly recommended for production deployments to support stability, telemetry, and future feature growth.
+At a minimum, an OpenWiFi access point requires 128 MB of RAM and 16 MB of flash, though 512 MB RAM and 32 MB flash is strongly recommended for production deployments to support stability, telemetry, and future feature growth.
 
 ## What are the different ways certificates can be shared with an ODM during manufacturing?
 
