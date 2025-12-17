@@ -61,7 +61,13 @@ const sidebars = {
     {
       type: 'category',
       label: 'FAQ',
-      items: ['faq'],
+      items: [
+        'faq/faq',
+        'faq/faq-platform-architecture',
+        'faq/faq-manufacturing-odm',
+        'faq/faq-hardware-requirements',
+        'faq/faq-flash-layout-partitioning',
+      ],
     },
   ],
 };
