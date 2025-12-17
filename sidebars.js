@@ -45,6 +45,11 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: 'Onboarding',
+      items: ['onboarding/openwifi-ap'],
+    },
+    {
+      type: 'category',
       label: 'Hardware',
       items: ['hardware-supported-devices'],
     },
