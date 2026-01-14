@@ -120,12 +120,18 @@ export default function Home() {
             <Heading as="h2">Roadmap Snapshot</Heading>
             <div className="row">
               <div className="col col--4">
-            <h3>v0.x</h3>
-            <p>Core services, controller scaffolding, and OpenLAN baseline features.</p>
+                <h3>v1.0</h3>
+                <p>
+                  Enable full residential WiFi support with subscriber self-service, improved UI/UX,
+                  and backend scalability.
+                </p>
               </div>
               <div className="col col--4">
-                <h3>v1.0</h3>
-                <p>Production hardening, HA clusters, SOC 2 aligned operational tooling.</p>
+                <h3>v2.0</h3>
+                <p>
+                  Extend Mango WiFi Cloud to support MDUs, large-scale ISP deployments, and advanced
+                  service integrations.
+                </p>
               </div>
               <div className="col col--4">
                 <h3>Beyond</h3>
