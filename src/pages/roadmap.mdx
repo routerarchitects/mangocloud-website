@@ -7,19 +7,31 @@ description: Transparent view into MangoCloud deliverables and release milestone
 
 MangoCloud tracks deliverables publicly to keep the OpenLAN ecosystem aligned on priorities. Releases follow semantic versioning with LTS indicators when features reach production-readiness for ISPs.
 
-## v0.x – Core Services (In Progress)
+## v1.0 – Residential WiFi (In Progress)
 
-- Stabilize authentication, policy, and device control loops
-- Deliver reference Kubernetes and Docker Compose deployments
-- Publish hardware compatibility data and golden onboarding flows
+> **Scope:** Enable full residential WiFi support with subscriber self-service, improved UI/UX, and backend scalability.
 
-## v1.0 – Production Hardening (Planned)
+- Residential WiFi support across cloud, gateway, and application layers
+- Subscriber Mobile Application v1: self-onboarding, SSID and password management for private and guest WiFi, mesh node management, connected device view, pause/resume internet per device, and topology view
+- OWGW UI enhancements with structured UI-based OpenWiFi AP configuration, removing raw JSON dependency
+- Major Self-Care portal changes to support residential subscribers and mobile application integration
+- OWProv enhancements for subscriber-aware provisioning and lifecycle management
+- Introduction of a new topology service written in Go for real-time topology visibility
+- Scalability support for up to 50,000 simultaneous connections
 
-- Multi-cluster coordination and zero-downtime upgrades
-- SOC 2 aligned operational runbooks and observability packs
-- Tenant-level resource quotas and delegated administration
+## v2.0 – MDU & Large-Scale Deployment (Planned)
 
-## Beyond v1.0 – Analytics & Automation (Future)
+> **Scope:** Extend Mango WiFi Cloud to support MDUs, large-scale ISP deployments, and advanced service integrations.
+
+- Integration of OWGW service with CGW service for unified gateway and subscriber management
+- Horizontal scalability support for up to 500,000 devices
+- UI blocks for configuration and management of OpenLAN switches and gateways
+- New API services for MDU onboarding and unit-level operations
+- Enhanced user and role management to support MDU hierarchies
+- MDU subscriber onboarding via the subscriber mobile application
+- Scheduled internet blocking feature available in the subscriber mobile application
+
+## Beyond v2.0 – Analytics & Automation (Future)
 
 - Analytics pipeline with actionable insights for OpenWiFi Access Points, OpenLAN Switches, and OpenLAN Gateways
 - Closed-loop automation for firmware rollouts and policy remediation
