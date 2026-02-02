@@ -1,5 +1,4 @@
 ---
-id: operations-configuration-management-owgw-ui-based-editing
 slug: /operations/configuration-management-owgw/ui-based-editing
 title: UI-based editing
 ---

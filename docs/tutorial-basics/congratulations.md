@@ -1,5 +1,4 @@
 ---
-id: onboarding-add-openwifi-aps
 slug: /onboarding/add-openwifi-aps
 title: Add OpenWiFi APs
 sidebar_position: 1

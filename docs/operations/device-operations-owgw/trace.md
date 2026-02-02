@@ -1,5 +1,4 @@
 ---
-id: operations-device-operations-owgw-trace
 slug: /operations/device-operations-owgw/trace
 title: Trace
 ---
@@ -8,8 +7,8 @@ title: Trace
 - Configure trace type and duration.
 - Click Start to capture live traffic.
 
-![Trace configuration](/img/operations/mango-cloud-operations-guide/image1.png)
+![Trace configuration](/img/operations/mango-cloud-operations-guide/image1.webp)
 
 - Download output as a .pcap file.
 
-![Trace output download](/img/operations/mango-cloud-operations-guide/image25.png)
+![Trace output download](/img/operations/mango-cloud-operations-guide/image25.webp)

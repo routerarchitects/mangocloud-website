@@ -1,5 +1,4 @@
 ---
-id: telemetry-pipeline
 slug: /telemetry/pipeline
 title: Telemetry Pipeline
 sidebar_position: 1

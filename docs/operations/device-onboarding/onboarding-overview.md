@@ -1,5 +1,4 @@
 ---
-id: operations-device-onboarding-onboarding-overview
 slug: /operations/device-onboarding/onboarding-overview
 title: Onboarding Overview
 ---

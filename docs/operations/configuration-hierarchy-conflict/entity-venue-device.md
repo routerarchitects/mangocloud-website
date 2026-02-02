@@ -1,5 +1,4 @@
 ---
-id: operations-configuration-hierarchy-conflict-entity-venue-device
 slug: /operations/configuration-hierarchy-conflict/entity-venue-device
 title: Entity -> Venue -> Device
 ---

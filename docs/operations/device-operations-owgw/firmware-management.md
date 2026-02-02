@@ -1,5 +1,4 @@
 ---
-id: operations-device-operations-owgw-firmware-management
 slug: /operations/device-operations-owgw/firmware-management
 title: Firmware Management
 ---
@@ -8,4 +7,4 @@ title: Firmware Management
 - Choose the new firmware image.
 - Click Upgrade and select Keep Redirector to preserve certificates.
 
-![Firmware upgrade flow](/img/operations/mango-cloud-operations-guide/image4.png)
+![Firmware upgrade flow](/img/operations/mango-cloud-operations-guide/image4.webp)

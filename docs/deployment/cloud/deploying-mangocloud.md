@@ -1,6 +1,4 @@
 ---
-
-id: deployment-cloud-deploying-mangocloud
 slug: /deployment/cloud/deploying-mangocloud
 title: Deploying MangoCloud
 ---

@@ -1,5 +1,4 @@
 ---
-id: operations-device-operations-owgw-identification-recovery
 slug: /operations/device-operations-owgw/identification-recovery
 title: Identification & Recovery
 ---

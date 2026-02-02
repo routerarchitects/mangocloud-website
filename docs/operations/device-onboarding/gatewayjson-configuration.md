@@ -1,5 +1,4 @@
 ---
-id: operations-device-onboarding-gatewayjson-configuration
 slug: /operations/device-onboarding/gatewayjson-configuration
 title: gateway.json Configuration
 ---

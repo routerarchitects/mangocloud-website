@@ -1,5 +1,4 @@
 ---
-id: operations-troubleshooting-operations-certificate-issues
 slug: /operations/troubleshooting-operations/certificate-issues
 title: Certificate Issues
 ---

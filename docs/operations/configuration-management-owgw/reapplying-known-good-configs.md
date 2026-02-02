@@ -1,5 +1,4 @@
 ---
-id: operations-configuration-management-owgw-reapplying-known-good-configs
 slug: /operations/configuration-management-owgw/reapplying-known-good-configs
 title: Reapplying Known-Good Configs
 ---

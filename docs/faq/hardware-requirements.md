@@ -1,5 +1,4 @@
 ---
-id: faq-hardware-requirements
 slug: /faq/hardware-requirements
 title: Hardware Requirements
 sidebar_label: Hardware Requirements

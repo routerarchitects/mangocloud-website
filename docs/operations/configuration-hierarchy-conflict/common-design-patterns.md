@@ -1,5 +1,4 @@
 ---
-id: operations-configuration-hierarchy-conflict-common-design-patterns
 slug: /operations/configuration-hierarchy-conflict/common-design-patterns
 title: Common Design Patterns
 ---

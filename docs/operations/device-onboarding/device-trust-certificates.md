@@ -1,5 +1,4 @@
 ---
-id: operations-device-onboarding-device-trust-certificates
 slug: /operations/device-onboarding/device-trust-certificates
 title: Device Trust & Certificates
 ---

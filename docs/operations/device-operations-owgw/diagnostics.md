@@ -1,5 +1,4 @@
 ---
-id: operations-device-operations-owgw-diagnostics
 slug: /operations/device-operations-owgw/diagnostics
 title: Diagnostics
 ---

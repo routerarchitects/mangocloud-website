@@ -1,5 +1,4 @@
 ---
-id: operations-security-governance-multi-tenant-considerations
 slug: /operations/security-governance/multi-tenant-considerations
 title: Multi-Tenant Considerations
 ---

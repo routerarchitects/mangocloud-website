@@ -1,5 +1,4 @@
 ---
-id: operations-device-operations-owgw-script
 slug: /operations/device-operations-owgw/script
 title: Script
 ---
@@ -9,8 +8,8 @@ title: Script
 - Optionally enable Wait for result.
 - Enter or upload the script, then click Start.
 
-![Script execution setup](/img/operations/mango-cloud-operations-guide/image45.png)
+![Script execution setup](/img/operations/mango-cloud-operations-guide/image45.webp)
 
 After success, copy or download the response.
 
-![Script execution results](/img/operations/mango-cloud-operations-guide/image58.png)
+![Script execution results](/img/operations/mango-cloud-operations-guide/image58.webp)

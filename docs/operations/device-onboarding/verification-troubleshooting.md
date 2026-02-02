@@ -1,5 +1,4 @@
 ---
-id: operations-device-onboarding-verification-troubleshooting
 slug: /operations/device-onboarding/verification-troubleshooting
 title: Verification & Troubleshooting
 ---

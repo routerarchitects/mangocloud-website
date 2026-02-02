@@ -1,5 +1,4 @@
 ---
-id: operations-configuration-management-owgw-default-device-configurations
 slug: /operations/configuration-management-owgw/default-device-configurations
 title: Default Device Configurations
 ---

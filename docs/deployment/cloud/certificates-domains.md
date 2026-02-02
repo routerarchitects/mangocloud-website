@@ -1,6 +1,4 @@
 ---
-
-id: deployment-cloud-certificates-domains
 slug: /deployment/cloud/certificates-domains
 title: Certificates & Domains
 ---

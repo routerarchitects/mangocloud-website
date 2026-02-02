@@ -1,5 +1,4 @@
 ---
-id: hardware-supported-devices
 slug: /hardware/supported-devices
 title: Supported Devices
 sidebar_position: 1

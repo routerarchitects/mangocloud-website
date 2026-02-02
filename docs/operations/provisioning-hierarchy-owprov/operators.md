@@ -1,5 +1,4 @@
 ---
-id: operations-provisioning-hierarchy-owprov-operators
 slug: /operations/provisioning-hierarchy-owprov/operators
 title: Operators
 ---
@@ -15,12 +14,12 @@ Steps:
 1. Log in to OWPROV-UI: `https://<DOMAIN_NAME>:8443`.
 2. From the left menu, open Operators and click + (Add).
 
-![Operators navigation](/img/operations/mango-cloud-operations-guide/image15.png)
+![Operators navigation](/img/operations/mango-cloud-operations-guide/image15.webp)
 
 3. Fill in Operator details (name, registration ID), then click Save.
 
-![Operator details form](/img/operations/mango-cloud-operations-guide/image26.png)
+![Operator details form](/img/operations/mango-cloud-operations-guide/image26.webp)
 
 4. Confirm the new Operator appears in the Operators list.
 
-![Operators list](/img/operations/mango-cloud-operations-guide/image28.png)
+![Operators list](/img/operations/mango-cloud-operations-guide/image28.webp)

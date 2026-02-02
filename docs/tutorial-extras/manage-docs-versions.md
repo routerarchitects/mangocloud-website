@@ -1,5 +1,4 @@
 ---
-id: configuration-config-profiles
 slug: /configuration/config-profiles
 title: Configuration Profiles
 sidebar_position: 1

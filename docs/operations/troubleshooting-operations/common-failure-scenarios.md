@@ -1,5 +1,4 @@
 ---
-id: operations-troubleshooting-operations-common-failure-scenarios
 slug: /operations/troubleshooting-operations/common-failure-scenarios
 title: Common Failure Scenarios
 ---

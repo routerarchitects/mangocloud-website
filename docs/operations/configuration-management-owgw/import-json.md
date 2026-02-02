@@ -1,5 +1,4 @@
 ---
-id: operations-configuration-management-owgw-import-json
 slug: /operations/configuration-management-owgw/import-json
 title: Import JSON
 ---

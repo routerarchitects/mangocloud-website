@@ -1,5 +1,4 @@
 ---
-id: operations-device-operations-owgw-telemetry-monitoring
 slug: /operations/device-operations-owgw/telemetry-monitoring
 title: Telemetry & Monitoring
 ---
@@ -9,4 +8,4 @@ title: Telemetry & Monitoring
 - Click Start to collect real-time data.
 - Copy output data after collection.
 
-![Telemetry command output](/img/operations/mango-cloud-operations-guide/image41.png)
+![Telemetry command output](/img/operations/mango-cloud-operations-guide/image41.webp)

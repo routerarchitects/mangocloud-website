@@ -1,5 +1,4 @@
 ---
-id: deployment-kubernetes
 slug: /deployment/kubernetes
 title: Deploy on Kubernetes
 sidebar_position: 1

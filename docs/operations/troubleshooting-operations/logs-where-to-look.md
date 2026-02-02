@@ -1,5 +1,4 @@
 ---
-id: operations-troubleshooting-operations-logs-where-to-look
 slug: /operations/troubleshooting-operations/logs-where-to-look
 title: Logs & Where to Look
 ---

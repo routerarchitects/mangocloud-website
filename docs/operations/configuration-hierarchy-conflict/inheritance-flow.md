@@ -1,5 +1,4 @@
 ---
-id: operations-configuration-hierarchy-conflict-inheritance-flow
 slug: /operations/configuration-hierarchy-conflict/inheritance-flow
 title: Inheritance Flow
 ---

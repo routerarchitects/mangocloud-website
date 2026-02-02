@@ -1,5 +1,4 @@
 ---
-id: operations-provisioning-hierarchy-owprov-entities-venues
 slug: /operations/provisioning-hierarchy-owprov/entities-venues
 title: Entities & Venues
 ---

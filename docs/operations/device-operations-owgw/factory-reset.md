@@ -1,5 +1,4 @@
 ---
-id: operations-device-operations-owgw-factory-reset
 slug: /operations/device-operations-owgw/factory-reset
 title: Factory Reset
 ---
@@ -8,4 +7,4 @@ title: Factory Reset
 - Click Start Reset when prompted with the device serial number.
 - The device resets to factory configuration.
 
-![Factory reset confirmation](/img/operations/mango-cloud-operations-guide/image47.png)
+![Factory reset confirmation](/img/operations/mango-cloud-operations-guide/image47.webp)

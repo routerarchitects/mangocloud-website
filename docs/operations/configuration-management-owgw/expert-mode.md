@@ -1,5 +1,4 @@
 ---
-id: operations-configuration-management-owgw-expert-mode
 slug: /operations/configuration-management-owgw/expert-mode
 title: Expert mode
 ---

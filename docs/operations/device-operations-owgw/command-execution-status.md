@@ -1,5 +1,4 @@
 ---
-id: operations-device-operations-owgw-command-execution-status
 slug: /operations/device-operations-owgw/command-execution-status
 title: Command Execution & Status
 ---

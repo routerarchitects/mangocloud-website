@@ -1,5 +1,4 @@
 ---
-id: operations-device-operations-owgw-device-actions-overview
 slug: /operations/device-operations-owgw/device-actions-overview
 title: Device Actions Overview
 ---
@@ -18,5 +17,5 @@ Commands available through OWGW:
 - **Reboot:** Remotely restarts the device.
 - **Wi-Fi Scan:** Detects nearby wireless networks and shows SSID/signal strength.
 
-![OWGW device actions overview](/img/operations/mango-cloud-operations-guide/image33.png)
-![OWGW device actions list](/img/operations/mango-cloud-operations-guide/image2.png)
+![OWGW device actions overview](/img/operations/mango-cloud-operations-guide/image33.webp)
+![OWGW device actions list](/img/operations/mango-cloud-operations-guide/image2.webp)

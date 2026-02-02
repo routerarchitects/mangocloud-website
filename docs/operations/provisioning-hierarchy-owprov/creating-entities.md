@@ -1,5 +1,4 @@
 ---
-id: operations-provisioning-hierarchy-owprov-creating-entities
 slug: /operations/provisioning-hierarchy-owprov/creating-entities
 title: Creating Entities
 ---
@@ -15,12 +14,12 @@ Steps:
 2. From the left menu, click Entities.
 3. Click Top Entity.
 
-![Top Entity selection](/img/operations/mango-cloud-operations-guide/image37.png)
+![Top Entity selection](/img/operations/mango-cloud-operations-guide/image37.webp)
 
 4. Click + Entity (top-right).
 
-![Add Entity button](/img/operations/mango-cloud-operations-guide/image36.jpg)
+![Add Entity button](/img/operations/mango-cloud-operations-guide/image36.webp)
 
 5. Enter Entity name (optional description) and click Save.
 
-![Entity details form](/img/operations/mango-cloud-operations-guide/image46.png)
+![Entity details form](/img/operations/mango-cloud-operations-guide/image46.webp)

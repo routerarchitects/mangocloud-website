@@ -1,5 +1,4 @@
 ---
-id: faq-manufacturing-odm
 slug: /faq/manufacturing-odm
 title: Manufacturing & ODM Integration
 sidebar_label: Manufacturing & ODM Integration

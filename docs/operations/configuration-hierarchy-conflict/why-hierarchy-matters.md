@@ -1,5 +1,4 @@
 ---
-id: operations-configuration-hierarchy-conflict-why-hierarchy-matters
 slug: /operations/configuration-hierarchy-conflict/why-hierarchy-matters
 title: Why Hierarchy Matters
 ---

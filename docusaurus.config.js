@@ -77,7 +77,7 @@ const config = {
       colorMode: {
         respectPrefersColorScheme: true,
       },
-  navbar: {
+      navbar: {
         title: '',
         logo: {
           alt: 'MangoCloud Logo',

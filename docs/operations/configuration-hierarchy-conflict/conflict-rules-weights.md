@@ -1,5 +1,4 @@
 ---
-id: operations-configuration-hierarchy-conflict-conflict-rules-weights
 slug: /operations/configuration-hierarchy-conflict/conflict-rules-weights
 title: Conflict Rules & Weights
 ---

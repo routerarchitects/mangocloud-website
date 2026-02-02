@@ -1,5 +1,4 @@
 ---
-id: operations-provisioning-hierarchy-owprov-adding-devices-to-venues
 slug: /operations/provisioning-hierarchy-owprov/adding-devices-to-venues
 title: Adding Devices to Venues
 ---
@@ -17,15 +16,15 @@ Steps:
 3. Open Entities / Venues and select the target Venue.
 4. Go to Venue Inventory and click + (Create).
 
-![Venue inventory create](/img/operations/mango-cloud-operations-guide/image12.jpg)
+![Venue inventory create](/img/operations/mango-cloud-operations-guide/image12.webp)
 
 5. Enter device details (serial, name, device type).
 6. Click Save.
 
-![Save device to venue](/img/operations/mango-cloud-operations-guide/image19.png)
+![Save device to venue](/img/operations/mango-cloud-operations-guide/image19.webp)
 
 7. Confirm the device appears in the Venue Device list.
 
-![Venue device list](/img/operations/mango-cloud-operations-guide/image54.png)
+![Venue device list](/img/operations/mango-cloud-operations-guide/image54.webp)
 
 Result: The device is now linked to the Venue and inherits Venue/Entity configuration.

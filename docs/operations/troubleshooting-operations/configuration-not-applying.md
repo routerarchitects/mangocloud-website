@@ -1,5 +1,4 @@
 ---
-id: operations-troubleshooting-operations-configuration-not-applying
 slug: /operations/troubleshooting-operations/configuration-not-applying
 title: Configuration Not Applying
 ---

@@ -1,5 +1,4 @@
 ---
-id: faq-platform-architecture
 slug: /faq/platform-architecture
 title: Platform & Architecture
 sidebar_label: Platform & Architecture

@@ -1,5 +1,4 @@
 ---
-id: operations-device-onboarding-connecting-devices-to-controller
 slug: /operations/device-onboarding/connecting-devices-to-controller
 title: Connecting Devices to Controller
 ---

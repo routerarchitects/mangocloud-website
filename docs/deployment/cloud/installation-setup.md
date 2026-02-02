@@ -1,6 +1,4 @@
 ---
-
-id: deployment-cloud-installation-setup
 slug: /deployment/cloud/installation-setup
 title: Installation & Setup
 ---

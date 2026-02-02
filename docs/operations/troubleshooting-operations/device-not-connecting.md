@@ -1,5 +1,4 @@
 ---
-id: operations-troubleshooting-operations-device-not-connecting
 slug: /operations/troubleshooting-operations/device-not-connecting
 title: Device Not Connecting
 ---
