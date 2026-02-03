@@ -21,9 +21,8 @@ Create working directory and clone the deployment repo:
 ```bash
 mkdir openwifi-sdk
 cd openwifi-sdk
-git clone https://github.com/Telecominfraproject/wlan-cloud-ucentral-deploy.git
-cd wlan-cloud-ucentral-deploy/docker-compose
-git checkout release/v3.2.0
+git clone https://github.com/routerarchitects/ra_wlan-cloud-ucentral-deploy.git
+cd ra_wlan-cloud-ucentral-deploy/docker-compose
 ```
 
 Note: Remove port 80 from `docker-compose.yml`, as it is required by Certbot during certificate renewal.
@@ -43,6 +42,8 @@ FIRMWAREDB_MAXAGE=3650
 
 ### Update `docker-compose.yml` images and matching `.env` files
 
+In `docker-compose.yml`, replace `image: "docker.io/bitnami/kafka:${KAFKA_TAG}"` with `image: "docker.io/bitnamilegacy/kafka:${KAFKA_TAG}"` in both the `kafka` and `init-kafka` services.
+
 If you are using custom-built images (or different tags), replace the image names/tags in `docker-compose.yml`, then review each service's referenced `.env` file to ensure required variables and paths match your deployment.
 
 ## Docker & Docker Compose
@@ -55,7 +56,3 @@ sudo usermod -aG docker $USER
 newgrp docker
 sudo chown -R $USER:$USER .
 ```
-
-## Repo checkout & versions
-
-Ensure all component versions align with the `release/v3.2.0` deployment branch.

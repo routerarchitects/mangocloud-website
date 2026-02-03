@@ -3,7 +3,16 @@ slug: /deployment/cloud/certificates-domains
 title: Certificates & Domains
 ---
 
-Manually replace these files in the `certs/` directory with your valid certs:
+Clone the `mango_cloud_cert_generation` repo to create and update valid certs:
+
+```bash
+git clone https://github.com/routerarchitects/mango_cloud_cert_generation.git
+cd mango_cloud_cert_generation
+```
+
+Follow the [README.md](https://github.com/routerarchitects/mango_cloud_cert_generation/blob/main/README.md) to generate device certificates and MangoCloud server certificates.
+
+Then confirm the `certs/` directory is updated with your valid certs:
 
 - `clientcas.pem`
 - `issuer.pem`
@@ -44,6 +53,12 @@ sudo certbot certonly --standalone \
 ```
 
 Certs will be created in `/etc/letsencrypt/live/<DOMAIN_NAME>/`.
+
+Verify with:
+
+```bash
+sudo ls -l /etc/letsencrypt/live/
+```
 
 Copy them into the OpenWiFi certs directory:
 
@@ -117,7 +132,7 @@ chmod +x update_openwifi_public_certs.sh
 ./update_openwifi_public_certs.sh
 ```
 
-Update the `owgw-ui` and `owprov-ui` sections to use public REST certs:
+Update `docker-compose.yml` with `owgw-ui` and `owprov-ui` section certs paths to public certs:
 
 ```diff
 -      - "./certs/restapi-cert.pem:/etc/nginx/restapi-cert.pem"
