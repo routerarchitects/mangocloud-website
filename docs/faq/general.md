@@ -1,5 +1,4 @@
 ---
-id: faq
 slug: /faq/faq
 title: FAQ
 sidebar_label: General

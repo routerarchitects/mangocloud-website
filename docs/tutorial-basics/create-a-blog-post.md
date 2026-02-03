@@ -1,5 +1,4 @@
 ---
-id: architecture-services-overview
 slug: /architecture/services-overview
 title: Services Overview
 sidebar_position: 2

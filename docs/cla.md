@@ -1,5 +1,4 @@
 ---
-id: community-cla
 slug: /contributing/cla
 title: Contributor License Agreement
 sidebar_position: 2

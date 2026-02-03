@@ -1,5 +1,4 @@
 ---
-id: intro-getting-started
 slug: /intro/getting-started
 title: Getting Started
 sidebar_position: 2

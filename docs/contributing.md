@@ -1,5 +1,4 @@
 ---
-id: community-contributing
 slug: /contributing/contributing
 title: Contributing
 sidebar_position: 1

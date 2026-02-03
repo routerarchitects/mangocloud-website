@@ -1,5 +1,4 @@
 ---
-id: faq-flash-layout-partitioning
 slug: /faq/flash-layout-partitioning
 title: Flash Layout & Partitioning
 sidebar_label: Flash Layout & Partitioning
