@@ -72,8 +72,49 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      headTags: [
+        {
+          tagName: 'link',
+          attributes: {
+            rel: 'icon',
+            type: 'image/svg+xml',
+            href: '/img/favicon.svg',
+          },
+        },
+        {
+          tagName: 'link',
+          attributes: {
+            rel: 'icon',
+            type: 'image/png',
+            sizes: '32x32',
+            href: '/img/favicon-32.png',
+          },
+        },
+        {
+          tagName: 'link',
+          attributes: {
+            rel: 'icon',
+            type: 'image/png',
+            sizes: '16x16',
+            href: '/img/favicon-16.png',
+          },
+        },
+        {
+          tagName: 'link',
+          attributes: {
+            rel: 'apple-touch-icon',
+            sizes: '180x180',
+            href: '/img/apple-touch-icon.png',
+          },
+        },
+      ],
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
+      metadata: [
+        {property: 'og:image', content: 'https://mangowifi.cloud/img/docusaurus-social-card.jpg'},
+        {name: 'twitter:image', content: 'https://mangowifi.cloud/img/docusaurus-social-card.jpg'},
+        {name: 'twitter:card', content: 'summary_large_image'},
+      ],
       colorMode: {
         respectPrefersColorScheme: true,
       },
@@ -81,13 +122,13 @@ const config = {
         title: '',
         logo: {
           alt: 'MangoCloud Logo',
-          src: 'img/logo.png',
+          src: 'img/logo.svg',
         },
         items: [
           {
             type: 'html',
             value:
-              '<a href=\"/\" class=\"navbar__icon-link\" aria-label=\"MangoCloud\"><img src=\"/img/logo.png\" alt=\"MangoCloud\" /></a>',
+              '<a href=\"/\" class=\"navbar__icon-link\" aria-label=\"MangoCloud\"><img src=\"/img/logo.svg\" alt=\"MangoCloud\" /></a>',
             position: 'left',
           },
           {to: '/', label: 'Home', position: 'left'},
