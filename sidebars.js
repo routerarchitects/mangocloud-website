@@ -33,15 +33,22 @@ const sidebars = {
       ],
     },
     {
+     type: 'category',
+     label: 'Releases',
+     items: [
+    {
       type: 'category',
-      label: 'Cloud Deployment',
+      label: 'Version 1.0.0',
       items: [
-        'deployment/cloud/deploying-mangocloud',
-        'deployment/cloud/installation-setup',
-        'deployment/cloud/certificates-domains',
-        'deployment/cloud/starting-verifying-the-stack',
-      ],
-    },
+        'releases/version_1.0.0/mangocloud-deployment',
+        'releases/version_1.0.0/features',
+        'releases/version_1.0.0/improvements',
+        'releases/version_1.0.0/known-issues',
+        'releases/version_1.0.0/artifacts',
+       ],
+      },
+    ],
+  },
     {
       type: 'category',
       label: 'Device Onboarding',
@@ -55,119 +62,67 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Device Operations (OWGW)',
+      label: 'Operations',
       items: [
         'operations/device-operations-owgw/device-actions-overview',
         {
           type: 'category',
-          label: 'Identification & Recovery',
-          link: {
-            type: 'doc',
-            id: 'operations/device-operations-owgw/identification-recovery',
-          },
+          label: 'Device Operations',
           items: [
             'operations/device-operations-owgw/blink',
             'operations/device-operations-owgw/factory-reset',
             'operations/device-operations-owgw/reboot',
-          ],
-        },
-        'operations/device-operations-owgw/firmware-management',
-        'operations/device-operations-owgw/telemetry-monitoring',
-        {
-          type: 'category',
-          label: 'Diagnostics',
-          link: {
-            type: 'doc',
-            id: 'operations/device-operations-owgw/diagnostics',
-          },
-          items: [
+            'operations/device-operations-owgw/firmware-management',
+            'operations/device-operations-owgw/telemetry-monitoring',
             'operations/device-operations-owgw/script',
             'operations/device-operations-owgw/trace',
             'operations/device-operations-owgw/wi-fi-scan',
             'operations/device-operations-owgw/rtty',
-          ],
-        },
-        'operations/device-operations-owgw/command-execution-status',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Configuration Management (OWGW)',
-      items: [
-        {
-          type: 'category',
-          label: 'Default Device Configurations',
-          link: {
-            type: 'doc',
-            id: 'operations/configuration-management-owgw/default-device-configurations',
-          },
-          items: [
-            'operations/configuration-management-owgw/device-type-defaults',
+            'operations/device-operations-owgw/command-execution-status',
           ],
         },
         {
           type: 'category',
-          label: 'Applying Configurations to Devices',
-          link: {
-            type: 'doc',
-            id: 'operations/configuration-management-owgw/applying-configurations-to-devices',
-          },
+          label: 'Configuration Management',
           items: [
-            'operations/configuration-management-owgw/import-json',
-            'operations/configuration-management-owgw/ui-based-editing',
-            'operations/configuration-management-owgw/expert-mode',
+            {
+              type: 'category',
+              label: 'Gateway',
+              items: [
+                'operations/configuration-management-owgw/default-device-configurations',
+                'operations/configuration-management-owgw/applying-configurations-to-devices',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Provision',
+              items: [
+                'operations/provisioning-hierarchy-owprov/provisioning-model-overview',
+                'operations/provisioning-hierarchy-owprov/entities-venues',
+                'operations/provisioning-hierarchy-owprov/operators',
+                'operations/provisioning-hierarchy-owprov/subscribers',
+                'operations/provisioning-hierarchy-owprov/adding-devices-to-venues',
+                'operations/provisioning-hierarchy-owprov/provisioning-workflow-end-to-end',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Configuration Hierarchy',
+              items: [
+                'operations/configuration-hierarchy-conflict/why-hierarchy-matters',
+                'operations/configuration-hierarchy-conflict/inheritance-flow',
+                'operations/configuration-hierarchy-conflict/computed-configuration',
+                'operations/configuration-hierarchy-conflict/conflict-rules-weights',
+                'operations/configuration-hierarchy-conflict/common-design-patterns',
+              ],
+            },
           ],
         },
-        'operations/configuration-management-owgw/reapplying-known-good-configs',
       ],
     },
     {
       type: 'category',
-      label: 'Provisioning & Hierarchy (OWPROV)',
-      items: [
-        'operations/provisioning-hierarchy-owprov/provisioning-model-overview',
-        {
-          type: 'category',
-          label: 'Entities & Venues',
-          link: {
-            type: 'doc',
-            id: 'operations/provisioning-hierarchy-owprov/entities-venues',
-          },
-          items: [
-            'operations/provisioning-hierarchy-owprov/creating-entities',
-            'operations/provisioning-hierarchy-owprov/creating-venues',
-          ],
-        },
-        'operations/provisioning-hierarchy-owprov/operators',
-        'operations/provisioning-hierarchy-owprov/subscribers',
-        'operations/provisioning-hierarchy-owprov/adding-devices-to-venues',
-        'operations/provisioning-hierarchy-owprov/provisioning-workflow-end-to-end',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Configuration Hierarchy & Conflict Resolution',
-      items: [
-        'operations/configuration-hierarchy-conflict/why-hierarchy-matters',
-        {
-          type: 'category',
-          label: 'Inheritance Flow',
-          link: {
-            type: 'doc',
-            id: 'operations/configuration-hierarchy-conflict/inheritance-flow',
-          },
-          items: [
-            'operations/configuration-hierarchy-conflict/entity-venue-device',
-          ],
-        },
-        'operations/configuration-hierarchy-conflict/computed-configuration',
-        'operations/configuration-hierarchy-conflict/conflict-rules-weights',
-        'operations/configuration-hierarchy-conflict/common-design-patterns',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Security & Governance',
+      label: 'Security',
       items: [
         'operations/security-governance/device-blacklisting',
         'operations/security-governance/access-control-concepts',
@@ -176,7 +131,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Troubleshooting & Operations',
+      label: 'Troubleshooting',
       items: [
         'operations/troubleshooting-operations/common-failure-scenarios',
         'operations/troubleshooting-operations/device-not-connecting',
@@ -187,7 +142,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Hardware',
+      label: 'Supported HW',
       items: [
         'user-guide',
       ],

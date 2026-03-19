@@ -1,30 +1,61 @@
 ---
 slug: /operations/provisioning-hierarchy-owprov/adding-devices-to-venues
-title: Adding Devices to Venues
+title: Add Devices to a Venue
 ---
 
-Use cases:
+Devices must be assigned to a Venue to receive the correct configuration through the `Entity -> Venue -> Subscriber` hierarchy.
 
-- Keep devices grouped by Venue for easier management (inventory, provisioning, monitoring).
-- Apply Venue-level configuration automatically.
-- Add the device to the correct Venue so it gets the right configuration.
+## Use Cases
 
-Steps:
+- Organize devices by Venue for easier management (inventory, provisioning, monitoring)
+- Automatically apply Venue-level configurations
+- Ensure devices receive the correct inherited settings
 
-1. Log in to OWPROV-UI: `https://<DOMAIN_NAME>:8443`.
-2. Ensure the device does not exist in Inventory and is not assigned to another Venue/Entity.
-3. Open Entities / Venues and select the target Venue.
-4. Go to Venue Inventory and click + (Create).
+## Add a Device to a Venue
+
+### Prerequisites
+
+- The target Entity and Venue must already exist
+- The device should not already be assigned to another Venue
+
+### Step 1: Select Venue
+
+1. Log in to OWPROV UI  
+   `https://<DOMAIN_NAME>:8443`
+2. Navigate to `Entities`
+3. Select the target Entity
+4. Open the required Venue
 
 ![Venue inventory create](/img/operations/mango-cloud-operations-guide/image12.webp)
 
-5. Enter device details (serial, name, device type).
-6. Click Save.
+### Step 2: Open Venue Inventory
+
+1. Go to the `Inventory` section within the Venue
+2. Click `+` (`Create`)
 
 ![Save device to venue](/img/operations/mango-cloud-operations-guide/image19.webp)
 
-7. Confirm the device appears in the Venue Device list.
+### Step 3: Enter Device Details
+
+Provide the required device information:
+
+- Serial Number:
+- Device Name:
+- Device Type:
+
+Click **Save**
 
 ![Venue device list](/img/operations/mango-cloud-operations-guide/image54.webp)
 
-Result: The device is now linked to the Venue and inherits Venue/Entity configuration.
+### Step 4: Verify Device Assignment
+
+1. The device appears in the Venue device(Inventory) list
+2. The device is now linked to the selected Venue
+
+## Result
+
+- The device is successfully assigned to the Venue
+- It automatically inherits configuration from:
+  - Entity level
+  - Venue level
+- The device is ready for provisioning and management

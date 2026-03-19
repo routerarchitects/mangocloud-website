@@ -3,10 +3,18 @@ slug: /operations/provisioning-hierarchy-owprov/provisioning-model-overview
 title: Provisioning Model Overview
 ---
 
-Provision devices using a shared configuration hierarchy (Entity -> Venue -> Subscriber) instead of configuring each device manually.
+Devices are provisioned using a hierarchical configuration model: `Entity -> Venue -> Subscriber`, eliminating the need for manual, per-device configuration.
 
-Core concepts and design philosophy:
+## Design Principles
 
-- Use hierarchy for scale and repeatability.
-- Apply shared templates at higher levels and targeted overrides at lower levels.
-- Keep workflows consistent across Entities, Venues, and Devices.
+### Scalable by Design
+
+Leverage a structured hierarchy to manage large deployments efficiently.
+
+### Configuration Reusability
+
+Apply shared templates at higher levels such as Entity or Venue and allow specific overrides at lower levels such as Subscriber or Device.
+
+### Consistency Across Layers
+
+Maintain uniform workflows and configuration logic across Entities, Venues, and Devices.

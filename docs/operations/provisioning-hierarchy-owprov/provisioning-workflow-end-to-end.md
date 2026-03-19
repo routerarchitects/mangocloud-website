@@ -1,30 +1,73 @@
 ---
 slug: /operations/provisioning-hierarchy-owprov/provisioning-workflow-end-to-end
-title: Provisioning Workflow (End-to-End)
+title: Device Provisioning Workflow
 ---
 
-1. Log in to OWPROV-UI: `https://<DOMAIN_NAME>:8443`.
-   ![OWPROV login](/img/operations/mango-cloud-operations-guide/image27.webp)
-2. Default credentials (if unchanged): `tip@ucentral.com` / `openwifi`.
-3. Ensure the device exists in Inventory. If missing, add it.
-   ![Inventory device check](/img/operations/mango-cloud-operations-guide/image18.webp)
-4. Create or confirm Entity and Venue.
-   ![Create Entity](/img/operations/mango-cloud-operations-guide/image39.webp)
-   ![Create Venue](/img/operations/mango-cloud-operations-guide/image14.webp)
-5. Add configuration templates:
-   - Entity-level for global defaults.
-   - Venue-level for site-specific overrides.
-   ![Add configuration at Entity level](/img/operations/mango-cloud-operations-guide/image16.webp)
-   ![Add configuration at Venue level](/img/operations/mango-cloud-operations-guide/image34.webp)
-6. Assign the device to the correct Entity/Venue.
-7. Add device-specific overrides in the device details page.
-   ![Device-specific overrides](/img/operations/mango-cloud-operations-guide/image40.webp)
-   ![Device configuration details](/img/operations/mango-cloud-operations-guide/image29.webp)
-8. Save the configuration for the device.
-9. Open the device details page and check Computed Configuration.
-   ![Computed configuration](/img/operations/mango-cloud-operations-guide/image9.webp)
-10. Click Push Configuration.
-   ![Push configuration](/img/operations/mango-cloud-operations-guide/image17.webp)
-11. Verify the configuration status shows Success/Completed.
-    ![Configuration push status](/img/operations/mango-cloud-operations-guide/image55.webp)
-    ![Provisioning success](/img/operations/mango-cloud-operations-guide/image11.webp)
+## Use Cases
+
+- Provision devices using a hierarchical model (`Entity -> Venue -> Subscriber`) instead of manual per-device configuration
+- Apply a standard configuration (`WAN/LAN`, `DHCP/NAT`, `Wi-Fi SSIDs`, `services`) across multiple devices
+- Override configuration for a specific device while still inheriting defaults
+
+## Steps to Provision a Device
+
+
+### Step 1: Ensure Device is Available in Inventory
+
+- Navigate to `Inventory`
+- Verify the device exists
+- If not present, add the device to Inventory
+
+![Inventory device check](/img/operations/mango-cloud-operations-guide/image18.webp)
+
+### Step 2: Create or Verify Entity and Venue present.
+
+- Create or select the required Entity.
+- Create or select the Venue under that Entity.
+
+
+### Step 3: Assign Device to Entity and Venue
+
+- Add the device to the correct Entity and Venue to inherit the appropriate configurations.
+
+### Step 4: Configure Entity and Venue Level Template
+
+- Add configuration at Entity level if you want it inherited by all venues.
+- Add configuration at Venue level if you want it applied only to that venue.
+- Save the configuration template.
+
+![Add configuration at Entity level](/img/operations/mango-cloud-operations-guide/image16.webp)
+<p align="center">Entity level configuration template</p>
+
+![Add configuration at Venue level](/img/operations/mango-cloud-operations-guide/image34.webp)
+<p align="center">Venue level configuration template</p>
+
+### Step 5: Add Device-Specific Configuration
+
+- In the device details page(via inventory), add Device-Specific Configuration essential for device rest configuration will inherit form Entity and Venue.
+- Save the configuration for the device.
+
+![Device configuration details](/img/operations/mango-cloud-operations-guide/image29.webp)
+
+### Step 6: Apply (Push) Configuration
+
+- Open the `Device Details` page
+- Review `Computed Configuration` (final merged configuration)
+- Click `Push Configuration`
+
+![Push configuration](/img/operations/mango-cloud-operations-guide/image17.webp)
+![Configuration push status](/img/operations/mango-cloud-operations-guide/image55.webp)
+
+### Step 7: Verify Provisioning Status
+
+- Ensure the configuration is applied correctly on the device
+
+![Computed configuration](/img/operations/mango-cloud-operations-guide/image9.webp)
+
+## Result
+
+- The device receives configuration based on:
+  - Entity-level template
+  - Venue-level template
+  - Device-specific overrides (if any)
+- The device is fully provisioned and operational

@@ -1,6 +1,6 @@
 ---
 slug: /operations/device-operations-owgw/device-actions-overview
-title: Device Actions Overview
+title: Device Operations Overview
 ---
 
 Commands available through OWGW:

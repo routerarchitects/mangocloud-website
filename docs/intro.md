@@ -4,25 +4,53 @@ title: Overview
 sidebar_position: 1
 ---
 
-import RouterArchitectsLink from '@site/src/components/RouterArchitectsLink';
+# Overview
 
-# MangoCloud Overview
+**Mango Cloud** is an open-source cloud controller designed to manage large-scale access networks built on the **OpenLAN ecosystem**. It provides centralized provisioning, configuration management, monitoring, and lifecycle operations for OpenWiFi Access Points, OpenLAN Switches, and OpenLAN Gateways.
 
-MangoCloud is an open-source, production-ready controller for OpenWiFi Access Points, OpenLAN Switches, and OpenLAN Gateways (OLGs). Maintained by <RouterArchitectsLink />, the project provides multi-tenant automation, telemetry, and APIs aligned with service-provider requirements.
+Modern networks often consist of thousands of distributed devices that must be configured, monitored, and updated remotely. Mango Cloud provides the control plane required to operate these networks efficiently using open technologies and cloud-native infrastructure.
 
-## Why MangoCloud
+The platform is designed to support two primary deployment environments, with broader ecosystem coverage across residential, enterprise, and hospitality use cases.
 
-- **Open-source governance:** Transparent roadmap, CLA-backed contributions, and permissive licensing.
-- **Production hardened:** Multi-tenant controls, compliance-aligned operations, and high availability tooling.
-- **Hardware coverage:** First-class support for the entire OpenLAN ecosystem with consistent telemetry and policy models.
+## Residential WiFi Networks
 
-## Architecture Pillars
+Internet service providers and broadband operators deploy large fleets of home gateways and WiFi access points across residential networks. Managing these devices at scale requires automated provisioning, centralized configuration control, and continuous monitoring.
 
-1. **Cloud-native design** — Stateless microservices, container packaging, and GitOps-friendly manifests.
-2. **Security first** — Role-based access, encrypted control channels, and auditable workflows.
-3. **API-first integrations** — REST, gRPC, and event streaming to connect OSS/BSS platforms.
+Mango Cloud enables operators to:
 
-## Continue Learning
+- onboard and provision residential devices
+- manage WiFi and network configuration policies
+- monitor device health and network performance
+- perform remote troubleshooting and firmware upgrades
 
-- Follow the [Getting Started guide](/docs/intro/getting-started) to deploy MangoCloud.
-- Review the [Architecture documentation](/docs/architecture/system-architecture) to understand service boundaries.
+This allows ISPs to operate residential WiFi infrastructure efficiently while maintaining consistent service quality across thousands of homes.
+
+## Enterprise LAN Networks
+
+Enterprise networks typically consist of switches, gateways, and access points deployed across offices, campuses, hospitality environments, and multi-dwelling units.
+
+Mango Cloud provides centralized visibility and control for these environments by enabling administrators to manage the full access network from a single platform. Network policies, configuration templates, and monitoring tools allow enterprise IT teams and managed service providers to operate large LAN environments with consistent configuration and operational insight.
+
+## Hospitality Networks
+
+Hotels, resorts, and hospitality venues often operate large wireless networks spanning multiple floors and buildings. Mango Cloud enables operators to manage access points, switches, and gateways across the entire property while maintaining consistent network policies and performance monitoring.
+
+## Multi-Dwelling Unit (MDU) Networks
+
+Support for MDU environments such as apartment complexes and residential communities will be introduced starting with **Mango Cloud Release 2.0**, enabling operators to manage shared infrastructure while maintaining network isolation across individual units.
+
+## The OpenLAN Ecosystem
+
+Mango Cloud operates as the cloud control plane for the **OpenLAN device ecosystem**, which includes:
+
+- **OpenWiFi Access Points** - providing wireless connectivity
+- **OpenLAN Switches** - delivering wired network infrastructure
+- **OpenLAN Gateways** - providing routing, security, and WAN connectivity
+
+By integrating these components under a unified management platform, Mango Cloud enables operators to manage both wireless and wired infrastructure through a single cloud-based system.
+
+## Cloud-Native and Open
+
+Mango Cloud is built using a cloud-native architecture and is designed to integrate easily with operational systems used by network operators. Its open-source foundation allows organizations to customize, extend, and deploy the platform according to their operational requirements.
+
+For a deeper understanding of the system architecture and components, continue to the **Architecture** section of the documentation.
