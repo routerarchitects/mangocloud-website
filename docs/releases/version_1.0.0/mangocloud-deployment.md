@@ -1,5 +1,5 @@
 ---
-slug: /deployment/cloud/mangocloud-deployment
+slug: /releases/version_1.0.0/mangocloud-deployment
 title: MangoCloud Deployment
 ---
 
@@ -8,7 +8,7 @@ To deploy Mango Cloud, go through the official deployment repository and follow 
 ## Deployment Guide
 
 - Visit the deployment repository:  
-  https://github.com/routerarchitects/mango-cloud-deployment
+  https://github.com/routerarchitects/mango-cloud-deployment/tree/release/v1.0.0
 
 - Follow the README step-by-step to set up the Mango Cloud stack using Docker Compose
 
