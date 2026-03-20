@@ -31,7 +31,7 @@ This release introduces core platform capabilities for managing operators, subsc
 
 ---
 
-## Device Management
+## Subscriber Device Management
 
 ### Add Subscriber Device
 Subscriber device onboarding supports both gateway and mesh device management:
@@ -47,7 +47,6 @@ Subscriber device onboarding supports both gateway and mesh device management:
 - Monitoring is **automatically enabled** when a gateway device is added
 - Monitoring can be **started or stopped** from the OWPROV UI
 
----
 
 ### Delete Subscriber Device
 - Devices must be deleted based on hierarchy:
@@ -67,9 +66,3 @@ Subscriber device onboarding supports both gateway and mesh device management:
 
 ---
 
-## UI Enhancements
-
-### Enhanced OWGW UI
-- Improved user experience for:
-  - Device configuration
-  - Device management workflows
