@@ -128,7 +128,7 @@ const config = {
           {
             type: 'html',
             value:
-              '<a href=\"/\" class=\"navbar__icon-link\" aria-label=\"MangoCloud\"><img src=\"/img/logo.png\" alt=\"MangoCloud\" /></a>',
+              '<a href=\"/\" class=\"navbar__icon-link\" aria-label=\"MangoCloud\"><img src=\"/img/logo.png\" alt=\"MangoCloud\" class=\"navbar__logo-img navbar__logo-img--default\" /><img src=\"/img/logo-dark-mode.png\" alt=\"MangoCloud\" class=\"navbar__logo-img navbar__logo-img--explicit-dark\" /></a>',
             position: 'left',
           },
           {to: '/', label: 'Home', position: 'left'},

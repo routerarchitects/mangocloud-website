@@ -72,6 +72,20 @@ a[href='https://www.routerarchitects.com'] {
   width: auto;
   display: block;
   margin-top: 2px;
+  box-sizing: border-box;
+  padding-bottom: 4px;
+}
+
+.navbar__icon-link .navbar__logo-img--explicit-dark {
+  display: none;
+}
+
+html[data-theme='dark'] .navbar__icon-link .navbar__logo-img--default {
+  display: none;
+}
+
+html[data-theme='dark'] .navbar__icon-link .navbar__logo-img--explicit-dark {
+  display: block;
 }
 
 .navbar__title {
@@ -98,6 +112,7 @@ a[href='https://www.routerarchitects.com'] {
   .navbar__icon-link img {
     height: 36px;
     margin-top: 1px;
+    padding-bottom: 3px;
   }
   .navbar__title {
     font-size: 1.6rem;
@@ -172,6 +187,11 @@ a[href='https://www.routerarchitects.com'] {
 .member-logo--aireceive {
   width: auto;
   height: 136px;
+  color: #111111;
+}
+
+html[data-theme='dark'] .member-logo--aireceive {
+  color: #ffffff;
 }
 
 @media (max-width: 996px) {
